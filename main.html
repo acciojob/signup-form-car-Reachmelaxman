@@ -10,7 +10,59 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<form method="post">
+		
+		<div>
+		<label for="name">Name</label>
+		<input type="text" name="name" id="name" required placeholder="Name"><br>
+		</div>
 
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="Email" required>
+			
+		</div>
+        <div>
+            <label for="gender">Gender</label>
+            <input type="radio" value="Male" name="gender" id="gender" required> Male
+            <input type="radio" value="Female" name="gender" id="gender" required>Female<br>
+        </div>
+        <div>
+            <label for="Cars" > Car Brands : </label>
+            <select id="cars">
+                <option value="Car Brands" name="Car Brands" disabled selected required>--Please choose an option--</option>
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Mercedez</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required placeholder="Age">
+        </div>
+        <div>
+            <lable for="dob">DOB</lable>
+            <input type="date" name="dob" id="dob" required><br>
+        </div>
+        <div>
+            <lable for="tel">Phone Number</lable>
+            <input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxxx">
+            <br>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required placeholder="Password">
+        </div>
+        <div>
+            <lable for="tos">I agree to the TOS</lable>
+            <input type="checkbox" name="tos" id="tos" required><br>
+        </div>
+		<div>
+            <button type="submit">Submit</button>
+        </div>
+		
+	</form>
 </body>
 
 </html>
